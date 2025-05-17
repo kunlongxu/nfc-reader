@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Settings
@@ -15,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.compose.material3.BottomAppBar as Material3BottomAppBar
 
@@ -28,11 +30,9 @@ fun BottomAppBar(navController: NavController) {
                 BottomBarItem(stringResource(R.string.bottom_bar_home)) {
                     IconButton(
                         onClick = {/* TODO*/ },
-                        modifier = Modifier.background(Color.Red)
                         ) {
                         Icon(
                             Icons.Rounded.Home,
-
                             contentDescription = stringResource(R.string.bottom_bar_home)
                         )
                     }
